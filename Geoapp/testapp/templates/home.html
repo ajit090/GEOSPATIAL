@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My App</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My App</h1>
+        <p>This is the home page of my Django application.</p>
+        <p>You can navigate to the API section by clicking below:</p>
+        <a href="{% url 'country-list-create' %}" class="btn btn-primary">Go to Countries API</a>
+    </div>
+    <!-- Link to your JS file -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
